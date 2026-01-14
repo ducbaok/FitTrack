@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorBackground">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/spacing_md"
+        android:paddingVertical="@dimen/spacing_sm"
+        android:background="@color/colorBackground">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_icon_button"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="@string/back"
+            app:tint="@color/colorOnSurface" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/spacing_sm"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvExerciseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_lg"
+                android:textStyle="bold"
+                android:textColor="@color/colorOnSurface"
+                tools:text="Bench Press" />
+
+            <TextView
+                android:id="@+id/tvMuscle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_sm"
+                android:textColor="@color/colorMutedForeground"
+                tools:text="Chest" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_icon_button"
+            android:src="@drawable/ic_star"
+            android:contentDescription="Favorite"
+            app:tint="@color/colorMutedForeground" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Video Thumbnail -->
+            <FrameLayout
+                android:id="@+id/videoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorMuted">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_tips_card" />
+
+                <!-- Play Button -->
+                <FrameLayout
+                    android:id="@+id/btnPlayVideo"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_toggle_active"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/ic_play"
+                        app:tint="@color/colorOnPrimary" />
+
+                </FrameLayout>
+
+                <!-- Duration Badge -->
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:paddingHorizontal="@dimen/spacing_sm"
+                    android:paddingVertical="@dimen/spacing_xs"
+                    android:background="#B3000000"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_xs"
+                    tools:text="0:45" />
+
+            </FrameLayout>
+
+            <!-- Content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_md">
+
+                <!-- Tags -->
+                <LinearLayout
+                    android:id="@+id/tagsContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvEquipment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/spacing_sm"
+                        android:paddingVertical="@dimen/spacing_xs"
+                        android:background="@drawable/bg_chip"
+                        android:textColor="@color/colorOnSurface"
+                        android:textSize="@dimen/text_sm"
+                        tools:text="Barbell" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_sm"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/tvDifficulty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/spacing_sm"
+                        android:paddingVertical="@dimen/spacing_xs"
+                        android:background="@drawable/bg_badge_intermediate"
+                        android:textColor="@color/colorIntermediate"
+                        android:textSize="@dimen/text_sm"
+                        tools:text="Intermediate" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_sm"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/tvMuscleTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/spacing_sm"
+                        android:paddingVertical="@dimen/spacing_xs"
+                        android:background="@drawable/bg_chip"
+                        android:textColor="@color/colorOnSurface"
+                        android:textSize="@dimen/text_sm"
+                        tools:text="Chest" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_sm"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/tvType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/spacing_sm"
+                        android:paddingVertical="@dimen/spacing_xs"
+                        android:background="@drawable/bg_chip"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_sm"
+                        tools:text="Compound" />
+
+                </LinearLayout>
+
+                <!-- Muscles Worked Card -->
+                <LinearLayout
+                    android:id="@+id/musclesWorkedCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_lg"
+                    android:background="@drawable/bg_card_muted"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Muscles Worked"
+                        android:textColor="@color/colorOnSurface"
+                        android:textSize="@dimen/text_lg"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:orientation="horizontal">
+
+                        <!-- Body Diagrams -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <!-- Front Body -->
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_marginEnd="@dimen/spacing_lg">
+
+                                    <com.fittrack.ui.exercise.MiniAnatomyView
+                                        android:id="@+id/miniAnatomyFront"
+                                        android:layout_width="100dp"
+                                        android:layout_height="150dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:text="Front"
+                                        android:textColor="@color/colorMutedForeground"
+                                        android:textSize="@dimen/text_xs" />
+
+                                </LinearLayout>
+
+                                <!-- Back Body -->
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_marginStart="@dimen/spacing_lg">
+
+                                    <com.fittrack.ui.exercise.MiniAnatomyView
+                                        android:id="@+id/miniAnatomyBack"
+                                        android:layout_width="100dp"
+                                        android:layout_height="150dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:text="Back"
+                                        android:textColor="@color/colorMutedForeground"
+                                        android:textSize="@dimen/text_xs" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Fatigue Level Card -->
+                <LinearLayout
+                    android:id="@+id/fatigueCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:background="@drawable/bg_card_muted"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fatigue Level"
+                            android:textColor="@color/colorOnSurface"
+                            android:textSize="@dimen/text_lg"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvFatiguePercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorMutedForeground"
+                            android:textSize="@dimen/text_sm"
+                            tools:text="65%" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="@dimen/spacing_sm">
+
+                        <!-- Gradient Guide Track -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/bg_fatigue_bar_gradient" />
+
+                        <!-- Position Marker -->
+                        <View
+                            android:id="@+id/fatigueMarker"
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:layout_gravity="center_vertical|start" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:text="Higher fatigue means more recovery time needed"
+                        android:textColor="@color/colorMutedForeground"
+                        android:textSize="@dimen/text_xs" />
+
+                </LinearLayout>
+
+                <!-- Instructions -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_lg"
+                    android:text="Instructions"
+                    android:textColor="@color/colorOnSurface"
+                    android:textSize="@dimen/text_lg"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/instructionsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:orientation="vertical">
+                    <!-- Instructions will be added programmatically -->
+                </LinearLayout>
+
+                <!-- Pro Tips Card -->
+                <LinearLayout
+                    android:id="@+id/tipsCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:background="@drawable/bg_tips_card"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pro Tips"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_lg"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/tipsContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:orientation="vertical">
+                        <!-- Tips will be added programmatically -->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Action Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddToWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_lg"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/spacing_md"
+        android:text="Add to Workout"
+        app:cornerRadius="@dimen/radius_button" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

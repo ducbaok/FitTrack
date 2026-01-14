@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="8dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Set Indicator -->
+    <TextView
+        android:id="@+id/tvSetNumber"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/bg_circle_number"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="1" />
+
+    <!-- Previous Stats -->
+    <TextView
+        android:id="@+id/tvPrevious"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <!-- Weight Input -->
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit_text"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:padding="8dp"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="16dp"
+        android:layout_height="1dp" />
+
+    <!-- Reps Input -->
+    <EditText
+        android:id="@+id/etReps"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit_text"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="8dp"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp" />
+
+    <!-- Action Button (Checkmark) -->
+    <ImageButton
+        android:id="@+id/btnCompleteSet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_rounded_button_navy"
+        android:contentDescription="Complete Set"
+        android:src="@drawable/ic_check"
+        android:tint="@color/white" />
+
+</LinearLayout>

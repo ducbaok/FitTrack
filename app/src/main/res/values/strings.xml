@@ -1,3 +1,62 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">FitTrack</string>
+    
+    <!-- Login Screen -->
+    <string name="login_tagline">Track your strength journey</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or_continue_with">or continue with</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    
+    <!-- Error Messages -->
+    <string name="error_sign_in_failed">Sign in failed. Please try again.</string>
+    <string name="error_sign_up_failed">Sign up failed. Please try again.</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    
+    <!-- Success Messages -->
+    <string name="success_password_reset">Password reset email sent</string>
+    
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    
+    <!-- Home Screen -->
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="front">Front</string>
+    <string name="back">Back</string>
+    <string name="legend_tired">Tired</string>
+    <string name="legend_recovering">Recovering</string>
+    <string name="legend_ready">Ready</string>
+    <string name="tap_muscle_hint">Tap a muscle group to see exercises</string>
+    <string name="view_exercises">View Exercises</string>
+    <string name="muscle_selected">%s selected</string>
+    
+    <!-- Exercise List Screen -->
+    <string name="exercises">Exercises</string>
+    <string name="view_exercise">View exercise</string>
+    <string name="no_exercises_found">No exercises found</string>
+    <string name="clear_filters">Clear filters</string>
+    <string name="equipment_dumbbell">Dumbbell</string>
+    <string name="equipment_barbell">Barbell</string>
+    <string name="equipment_bodyweight">Bodyweight</string>
+    <string name="equipment_cable">Cable</string>
+    <string name="equipment_machine">Machine</string>
+    <string name="difficulty_beginner">Beginner</string>
+    <string name="difficulty_intermediate">Intermediate</string>
+    <string name="difficulty_advanced">Advanced</string>
+    
+    <!-- Exercise Detail Screen -->
+    <string name="instructions">Instructions</string>
+    <string name="mark_as_done">Mark as Done</string>
+    <string name="workout_logged">Workout logged!</string>
+    <string name="undo">Undo</string>
 </resources>

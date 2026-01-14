@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_muted"
+    android:padding="@dimen/spacing_md">
+
+    <!-- Exercise Name and Chevron -->
+    <TextView
+        android:id="@+id/tvExerciseName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_lg"
+        android:textStyle="bold"
+        android:textColor="@color/colorOnSurface"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivChevron"
+        tools:text="Bench Press" />
+
+    <ImageView
+        android:id="@+id/ivChevron"
+        android:layout_width="@dimen/icon_sm"
+        android:layout_height="@dimen/icon_sm"
+        android:src="@drawable/ic_chevron_right"
+        app:tint="@color/colorMutedForeground"
+        app:layout_constraintTop_toTopOf="@id/tvExerciseName"
+        app:layout_constraintBottom_toBottomOf="@id/tvExerciseName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Info Row -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvExerciseName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Sets x Reps -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_dumbbell"
+                app:tint="@color/colorMutedForeground" />
+
+            <TextView
+                android:id="@+id/tvSetsReps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xs"
+                android:textSize="@dimen/text_sm"
+                android:textColor="@color/colorMutedForeground"
+                tools:text="4 x 8-10" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/spacing_md"
+            android:layout_height="0dp" />
+
+        <!-- Weight -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_trending_up"
+                app:tint="@color/colorMutedForeground" />
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xs"
+                android:textSize="@dimen/text_sm"
+                android:textColor="@color/colorMutedForeground"
+                tools:text="185 lbs" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/spacing_md"
+            android:layout_height="0dp" />
+
+        <!-- Duration -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_clock"
+                app:tint="@color/colorMutedForeground" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xs"
+                android:textSize="@dimen/text_sm"
+                android:textColor="@color/colorMutedForeground"
+                tools:text="12 min" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

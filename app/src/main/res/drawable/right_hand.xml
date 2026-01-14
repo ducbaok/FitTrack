@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="58dp"
+    android:viewportWidth="28"
+    android:viewportHeight="58">
+    
+    <!-- Right forearm muscle - white fill, black outline -->
+    <path
+        android:name="muscle_forearm_right"
+        android:pathData="M1.649,26.667C6.049,23.067 10.482,8.167 12.149,1.167C17.649,8.667 23.149,9.153 25.649,7.167C24.149,11.167 28.149,14.667 26.649,17.667C23.649,19.167 22.649,26.667 23.149,33.667C23.149,37.667 21.649,41.167 19.149,40.667C16.649,40.167 13.649,37.167 15.149,28.667C13.149,29.167 9.649,41.167 10.149,45.667C10.649,50.167 9.649,55.167 7.149,52.667C7.149,56.667 4.816,57.334 3.649,57.167C1.149,55.167 -0.851,44.167 1.649,26.667Z"
+        android:fillColor="#FFFFFFFF"
+        android:strokeWidth="1"
+        android:strokeColor="#000000"/>
+        
+</vector>

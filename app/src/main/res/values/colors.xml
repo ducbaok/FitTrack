@@ -1,5 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Base Colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Purple Primary Palette -->
+    <color name="purple_50">#F3E5F5</color>
+    <color name="purple_100">#E1BEE7</color>
+    <color name="purple_200">#CE93D8</color>
+    <color name="purple_300">#BA68C8</color>
+    <color name="purple_400">#AB47BC</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_600">#8E24AA</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="purple_800">#6A1B9A</color>
+    <color name="purple_900">#4A148C</color>
+
+    <!-- Theme Colors - Light -->
+    <color name="colorPrimary">#7B1FA2</color>
+    <color name="colorPrimaryDark">#6A1B9A</color>
+    <color name="colorPrimaryVariant">#9C27B0</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#CE93D8</color>
+    <color name="colorOnSecondary">#000000</color>
+
+    <!-- Surface Colors - Dark Theme Focused -->
+    <color name="colorBackground">#1A1A2E</color>
+    <color name="colorSurface">#1E1E1E</color>
+    <color name="colorSurfaceVariant">#2D2D2D</color>
+    <color name="colorOnBackground">#FAFAFA</color>
+    <color name="colorOnSurface">#FAFAFA</color>
+    <color name="colorOnSurfaceVariant">#B3B3B3</color>
+
+    <!-- Muted Colors (for cards and secondary elements) -->
+    <color name="colorMuted">#2A2A2A</color>
+    <color name="colorMutedForeground">#A0A0A0</color>
+    <color name="colorBorder">#3D3D3D</color>
+    <color name="colorInput">#3D3D3D</color>
+
+    <!-- Semantic Colors - Difficulty Badges -->
+    <color name="colorBeginner">#22C55E</color>
+    <color name="colorBeginnerBg">#22C55E33</color>
+    <color name="colorIntermediate">#EAB308</color>
+    <color name="colorIntermediateBg">#EAB30833</color>
+    <color name="colorAdvanced">#EF4444</color>
+    <color name="colorAdvancedBg">#EF444433</color>
+
+    <!-- Fatigue Colors -->
+    <color name="colorFatigueStart">#9CA3AF</color>
+    <color name="colorFatigueEnd">#DC2626</color>
+
+    <!-- Ready/Recovering/Tired (Heatmap) -->
+    <color name="colorReady">#22C55E</color>
+    <color name="colorRecovering">#EAB308</color>
+    <color name="colorTired">#EF4444</color>
+
+    <!-- Favorite -->
+    <color name="colorFavorite">#FACC15</color>
+
+    <!-- Destructive/Logout -->
+    <color name="colorDestructive">#EF4444</color>
+    <color name="colorDestructiveBg">#EF44441A</color>
+
+    <!-- Accent Colors for Action Cards -->
+    <color name="colorAccentBlue">#3B82F6</color>
+    <color name="colorAccentBlueBg">#3B82F633</color>
+    <color name="colorAccentGreen">#22C55E</color>
+    <color name="colorAccentGreenBg">#22C55E33</color>
+    <color name="colorAccentOrange">#F97316</color>
+    <color name="colorAccentOrangeBg">#F9731633</color>
+
+    <!-- Workout Tracker Palette (User Specs) -->
+    <color name="primary_navy">#1A3C80</color>
+    <color name="secondary_blue">#E8F0FE</color>
+    <color name="accent_green">#4CAF50</color>
+    <color name="accent_red">#B00020</color>
+    <color name="background_gray">#F5F5F5</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    
+    <!-- Tags -->
+    <color name="tag_intermediate">#E1BEE7</color>
+    <color name="tag_barbell">#F5F5F5</color>
+    <color name="tag_compound">#C8E6C9</color>
 </resources>

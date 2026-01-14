@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_muted"
+    android:padding="@dimen/spacing_md">
+
+    <!-- Workout Name and Chevron -->
+    <TextView
+        android:id="@+id/tvWorkoutName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_lg"
+        android:textStyle="bold"
+        android:textColor="@color/colorOnSurface"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivChevron"
+        tools:text="Push Day" />
+
+    <ImageView
+        android:id="@+id/ivChevron"
+        android:layout_width="@dimen/icon_md"
+        android:layout_height="@dimen/icon_md"
+        android:src="@drawable/ic_chevron_right"
+        app:tint="@color/colorMutedForeground"
+        app:layout_constraintTop_toTopOf="@id/tvWorkoutName"
+        app:layout_constraintBottom_toBottomOf="@id/tvWorkoutName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Muscle Tags -->
+    <LinearLayout
+        android:id="@+id/muscleTagsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvWorkoutName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Tags will be added programmatically -->
+
+    </LinearLayout>
+
+    <!-- Fatigue Level Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/muscleTagsContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fatigue Level"
+            android:textSize="@dimen/text_xs"
+            android:textColor="@color/colorMutedForeground" />
+
+        <TextView
+            android:id="@+id/tvFatiguePercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_xs"
+            android:textColor="@color/colorOnSurface"
+            tools:text="75%" />
+
+    </LinearLayout>
+
+    <!-- Fatigue Progress Bar -->
+    <FrameLayout
+        android:id="@+id/fatigueBarContainer"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/progress_bar_height_md"
+        android:layout_marginTop="@dimen/spacing_xs"
+        android:background="@drawable/bg_progress_track"
+        app:layout_constraintTop_toBottomOf="@id/muscleTagsContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/spacing_md">
+
+        <View
+            android:id="@+id/fatigueBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_fatigue_gradient" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

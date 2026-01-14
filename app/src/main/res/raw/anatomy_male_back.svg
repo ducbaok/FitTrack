@@ -1,0 +1,343 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+  <defs>
+    <style>
+      .muscle { fill: #f5efe8; stroke: #5a6a7a; stroke-width: 1.5; stroke-linejoin: round; }
+      .outline { fill: none; stroke: #5a6a7a; stroke-width: 1.5; stroke-linejoin: round; }
+      .body { fill: #dce4ec; stroke: #5a6a7a; stroke-width: 1.5; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="800" fill="#dce4ec"/>
+  
+  <!-- Head (back view) -->
+  <ellipse id="head" cx="200" cy="55" rx="45" ry="50" class="body"/>
+  
+  <!-- Neck (back) -->
+  <path id="muscle_neck_back" class="muscle" d="
+    M175,100 
+    L225,100 
+    L220,130 
+    L180,130 
+    Z"/>
+  
+  <!-- Trapezius (large back muscle) -->
+  <path id="muscle_trap_upper_left" class="muscle" d="
+    M180,130
+    L200,125
+    L200,160
+    L175,175
+    L140,155
+    Q155,135 180,130
+    Z"/>
+  <path id="muscle_trap_upper_right" class="muscle" d="
+    M220,130
+    L200,125
+    L200,160
+    L225,175
+    L260,155
+    Q245,135 220,130
+    Z"/>
+  <path id="muscle_trap_mid_left" class="muscle" d="
+    M175,175
+    L200,160
+    L200,220
+    L175,230
+    L155,210
+    Z"/>
+  <path id="muscle_trap_mid_right" class="muscle" d="
+    M225,175
+    L200,160
+    L200,220
+    L225,230
+    L245,210
+    Z"/>
+  
+  <!-- Rear Deltoids -->
+  <path id="muscle_rear_delt_left" class="muscle" d="
+    M95,140
+    Q75,155 80,200
+    L110,205
+    L130,185
+    L140,155
+    Q120,140 95,140
+    Z"/>
+  <path id="muscle_rear_delt_right" class="muscle" d="
+    M305,140
+    Q325,155 320,200
+    L290,205
+    L270,185
+    L260,155
+    Q280,140 305,140
+    Z"/>
+  
+  <!-- Infraspinatus (rotator cuff area) -->
+  <path id="muscle_infraspinatus_left" class="muscle" d="
+    M140,160
+    L175,175
+    L175,215
+    L140,210
+    L130,185
+    Z"/>
+  <path id="muscle_infraspinatus_right" class="muscle" d="
+    M260,160
+    L225,175
+    L225,215
+    L260,210
+    L270,185
+    Z"/>
+  
+  <!-- Teres Major -->
+  <path id="muscle_teres_left" class="muscle" d="
+    M130,210
+    L140,210
+    L145,240
+    L120,245
+    Z"/>
+  <path id="muscle_teres_right" class="muscle" d="
+    M270,210
+    L260,210
+    L255,240
+    L280,245
+    Z"/>
+  
+  <!-- Latissimus Dorsi (Lats) -->
+  <path id="muscle_lat_left" class="muscle" d="
+    M120,245
+    L145,240
+    L175,230
+    L175,320
+    L155,350
+    Q115,300 120,245
+    Z"/>
+  <path id="muscle_lat_right" class="muscle" d="
+    M280,245
+    L255,240
+    L225,230
+    L225,320
+    L245,350
+    Q285,300 280,245
+    Z"/>
+  
+  <!-- Rhomboids (center upper back) -->
+  <path id="muscle_rhomboid_left" class="muscle" d="
+    M175,215
+    L200,220
+    L200,270
+    L175,265
+    Z"/>
+  <path id="muscle_rhomboid_right" class="muscle" d="
+    M225,215
+    L200,220
+    L200,270
+    L225,265
+    Z"/>
+  
+  <!-- Triceps -->
+  <path id="muscle_tricep_long_left" class="muscle" d="
+    M80,205
+    Q70,235 75,290
+    L90,295
+    L105,290
+    Q110,240 110,205
+    Z"/>
+  <path id="muscle_tricep_long_right" class="muscle" d="
+    M320,205
+    Q330,235 325,290
+    L310,295
+    L295,290
+    Q290,240 290,205
+    Z"/>
+  
+  <!-- Forearms (back view) -->
+  <path id="muscle_forearm_back_left" class="muscle" d="
+    M75,295
+    Q65,345 60,400
+    L70,405
+    L95,395
+    L105,340
+    L90,295
+    Z"/>
+  <path id="muscle_forearm_back_right" class="muscle" d="
+    M325,295
+    Q335,345 340,400
+    L330,405
+    L305,395
+    L295,340
+    L310,295
+    Z"/>
+  
+  <!-- Erector Spinae (Lower back) -->
+  <path id="muscle_erector_left" class="muscle" d="
+    M175,270
+    L200,275
+    L200,400
+    L175,410
+    Q165,340 175,270
+    Z"/>
+  <path id="muscle_erector_right" class="muscle" d="
+    M225,270
+    L200,275
+    L200,400
+    L225,410
+    Q235,340 225,270
+    Z"/>
+  
+  <!-- Lower back / Lumbar -->
+  <path id="muscle_lower_back_left" class="muscle" d="
+    M155,350
+    L175,320
+    L175,410
+    L155,420
+    Z"/>
+  <path id="muscle_lower_back_right" class="muscle" d="
+    M245,350
+    L225,320
+    L225,410
+    L245,420
+    Z"/>
+  
+  <!-- Gluteus Maximus (Glutes) -->
+  <path id="muscle_glute_left" class="muscle" d="
+    M120,420
+    L155,420
+    L175,410
+    L200,415
+    L200,490
+    L170,500
+    L125,485
+    Q105,450 120,420
+    Z"/>
+  <path id="muscle_glute_right" class="muscle" d="
+    M280,420
+    L245,420
+    L225,410
+    L200,415
+    L200,490
+    L230,500
+    L275,485
+    Q295,450 280,420
+    Z"/>
+  
+  <!-- Hamstrings -->
+  <path id="muscle_hamstring_outer_left" class="muscle" d="
+    M115,485
+    L135,495
+    L140,580
+    L120,590
+    Q105,540 115,485
+    Z"/>
+  <path id="muscle_hamstring_inner_left" class="muscle" d="
+    M135,495
+    L170,500
+    L175,580
+    L145,590
+    L140,580
+    Z"/>
+  <path id="muscle_hamstring_mid_left" class="muscle" d="
+    M170,500
+    L200,490
+    L200,575
+    L175,580
+    Z"/>
+  
+  <path id="muscle_hamstring_outer_right" class="muscle" d="
+    M285,485
+    L265,495
+    L260,580
+    L280,590
+    Q295,540 285,485
+    Z"/>
+  <path id="muscle_hamstring_inner_right" class="muscle" d="
+    M265,495
+    L230,500
+    L225,580
+    L255,590
+    L260,580
+    Z"/>
+  <path id="muscle_hamstring_mid_right" class="muscle" d="
+    M230,500
+    L200,490
+    L200,575
+    L225,580
+    Z"/>
+  
+  <!-- Knees (back view) -->
+  <ellipse id="knee_back_left" cx="155" cy="605" rx="30" ry="18" class="body"/>
+  <ellipse id="knee_back_right" cx="245" cy="605" rx="30" ry="18" class="body"/>
+  
+  <!-- Gastrocnemius (Calves) -->
+  <path id="muscle_calf_outer_left" class="muscle" d="
+    M120,620
+    L145,620
+    L150,700
+    L130,720
+    Q110,670 120,620
+    Z"/>
+  <path id="muscle_calf_inner_left" class="muscle" d="
+    M145,620
+    L175,625
+    L170,700
+    L150,700
+    Z"/>
+  
+  <path id="muscle_calf_outer_right" class="muscle" d="
+    M280,620
+    L255,620
+    L250,700
+    L270,720
+    Q290,670 280,620
+    Z"/>
+  <path id="muscle_calf_inner_right" class="muscle" d="
+    M255,620
+    L225,625
+    L230,700
+    L250,700
+    Z"/>
+  
+  <!-- Soleus (lower calf) -->
+  <path id="muscle_soleus_left" class="muscle" d="
+    M130,720
+    L170,700
+    L165,740
+    L135,745
+    Z"/>
+  <path id="muscle_soleus_right" class="muscle" d="
+    M270,720
+    L230,700
+    L235,740
+    L265,745
+    Z"/>
+  
+  <!-- Feet (back view) -->
+  <path id="foot_back_left" class="body" d="
+    M125,750
+    L170,745
+    Q180,760 175,775
+    L120,775
+    Q110,760 125,750
+    Z"/>
+  <path id="foot_back_right" class="body" d="
+    M275,750
+    L230,745
+    Q220,760 225,775
+    L280,775
+    Q290,760 275,750
+    Z"/>
+  
+  <!-- Hands -->
+  <path id="hand_back_left" class="body" d="
+    M55,405
+    L75,400
+    L85,440
+    L65,455
+    L45,445
+    Z"/>
+  <path id="hand_back_right" class="body" d="
+    M345,405
+    L325,400
+    L315,440
+    L335,455
+    L355,445
+    Z"/>
+</svg>

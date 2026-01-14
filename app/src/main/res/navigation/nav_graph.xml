@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home Fragment - Anatomy View -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.fittrack.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_exerciseList"
+            app:destination="@id/exerciseListFragment" />
+    </fragment>
+
+    <!-- Explore Fragment - Search All Exercises -->
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.fittrack.ui.explore.ExploreFragment"
+        android:label="Explore"
+        tools:layout="@layout/fragment_explore">
+
+        <action
+            android:id="@+id/action_explore_to_exerciseDetail"
+            app:destination="@id/exerciseDetailFragment" />
+    </fragment>
+
+    <!-- Workouts Fragment - Build & Track Workouts -->
+    <fragment
+        android:id="@+id/workoutsFragment"
+        android:name="com.fittrack.ui.workouts.WorkoutsFragment"
+        android:label="Workout"
+        tools:layout="@layout/fragment_workouts">
+
+        <action
+            android:id="@+id/action_workouts_to_tracker"
+            app:destination="@id/workoutTrackerFragment" />
+
+        <action
+            android:id="@+id/action_workouts_to_trackWorkout"
+            app:destination="@id/trackWorkoutFragment" />
+
+        <action
+            android:id="@+id/action_workouts_to_buildWorkout"
+            app:destination="@id/buildWorkoutFragment" />
+
+        <action
+            android:id="@+id/action_workouts_to_buildRoutine"
+            app:destination="@id/buildRoutineFragment" />
+    </fragment>
+
+    <!-- Track Workout Fragment - Stats Dashboard -->
+    <fragment
+        android:id="@+id/trackWorkoutFragment"
+        android:name="com.fittrack.ui.workouts.TrackWorkoutFragment"
+        android:label="Track Workout"
+        tools:layout="@layout/fragment_track_workout" />
+
+    <!-- Workout Tracker Fragment - Active Workout Session -->
+    <fragment
+        android:id="@+id/workoutTrackerFragment"
+        android:name="com.fittrack.ui.workouts.WorkoutTrackerFragment"
+        android:label="Workout Tracker"
+        tools:layout="@layout/fragment_workout_tracker" />
+
+    <!-- Build Workout Fragment - Create Workout Template -->
+    <fragment
+        android:id="@+id/buildWorkoutFragment"
+        android:name="com.fittrack.ui.workouts.BuildWorkoutFragment"
+        android:label="Build Workout"
+        tools:layout="@layout/fragment_build_workout" />
+
+    <!-- Build Routine Fragment - Create Weekly Schedule -->
+    <fragment
+        android:id="@+id/buildRoutineFragment"
+        android:name="com.fittrack.ui.workouts.BuildRoutineFragment"
+        android:label="Build Routine"
+        tools:layout="@layout/fragment_build_routine" />
+
+    <!-- Exercise List Fragment -->
+    <fragment
+        android:id="@+id/exerciseListFragment"
+        android:name="com.fittrack.ui.exercise.ExerciseListFragment"
+        android:label="@string/exercises"
+        tools:layout="@layout/fragment_exercise_list">
+
+        <argument
+            android:name="muscleId"
+            app:argType="integer"
+            android:defaultValue="0" />
+
+        <action
+            android:id="@+id/action_exerciseList_to_exerciseDetail"
+            app:destination="@id/exerciseDetailFragment" />
+    </fragment>
+
+    <!-- Exercise Detail Fragment -->
+    <fragment
+        android:id="@+id/exerciseDetailFragment"
+        android:name="com.fittrack.ui.exercise.ExerciseDetailFragment"
+        android:label=""
+        tools:layout="@layout/fragment_exercise_detail">
+
+        <argument
+            android:name="exerciseId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+
+    <!-- History Fragment - Workout History -->
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.fittrack.ui.history.HistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history">
+
+        <action
+            android:id="@+id/action_history_to_exerciseDetail"
+            app:destination="@id/exerciseDetailFragment" />
+    </fragment>
+
+    <!-- Profile Fragment - User Profile -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.fittrack.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_profile_to_settings"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <!-- Settings Fragment - App Settings -->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.fittrack.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

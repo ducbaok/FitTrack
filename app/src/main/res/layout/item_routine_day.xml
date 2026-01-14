@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_card_muted"
+    android:padding="@dimen/spacing_md"
+    android:layout_marginBottom="@dimen/spacing_sm">
+
+    <!-- Day Name -->
+    <TextView
+        android:id="@+id/tvDayName"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_sm"
+        android:textStyle="bold"
+        android:textColor="@color/colorOnSurface"
+        tools:text="Monday" />
+
+    <!-- Workout Selector -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/spacing_sm">
+
+        <TextView
+            android:id="@+id/tvWorkoutName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_sm"
+            android:textColor="@color/colorMutedForeground"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Rest Day" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_chevron_down"
+            app:tint="@color/colorMutedForeground" />
+
+    </LinearLayout>
+
+    <!-- Clear Button (shown when workout selected) -->
+    <ImageButton
+        android:id="@+id/btnClear"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_icon_button"
+        android:src="@drawable/ic_chevron_down"
+        android:rotation="45"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:contentDescription="Clear"
+        app:tint="@color/colorMutedForeground"
+        tools:visibility="visible" />
+
+</LinearLayout>

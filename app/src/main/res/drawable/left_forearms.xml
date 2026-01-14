@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="62dp"
+    android:height="81dp"
+    android:viewportWidth="62"
+    android:viewportHeight="81">
+  <path
+      android:name="muscle_forearm_left"
+      android:strokeWidth="1"
+      android:pathData="M61.19,71.157C57.872,62.962 54.496,54.623 51.911,48.657C45.411,33.657 39.411,15.657 21.911,1.157C22.244,4.657 22.711,12.39 21.911,15.324C20.911,18.99 14.411,27.657 0.411,15.324C6.946,24.742 11.658,33.37 11.911,37.157C20.911,55.657 32.911,62.657 37.411,66.157C40.211,66.957 46.911,75.823 49.911,80.157C57.911,81.157 60.97,75.157 61.19,71.157ZM61.19,71.157C61.194,71.166 61.197,71.175 61.201,71.184"
+      android:fillColor="#FFFFFFFF"
+      android:strokeColor="#000000"/>
+</vector>

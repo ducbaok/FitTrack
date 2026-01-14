@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimensions - Spacing -->
+    <dimen name="spacing_xxs">2dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xxl">48dp</dimen>
+
+    <!-- Dimensions - Corner Radii -->
+    <dimen name="radius_sm">4dp</dimen>
+    <dimen name="radius_md">8dp</dimen>
+    <dimen name="radius_lg">10dp</dimen>
+    <dimen name="radius_xl">16dp</dimen>
+    <dimen name="radius_card">12dp</dimen>
+    <dimen name="radius_button">28dp</dimen>
+    <dimen name="radius_chip">20dp</dimen>
+    <dimen name="radius_full">999dp</dimen>
+
+    <!-- Dimensions - Icon Sizes -->
+    <dimen name="icon_xs">12dp</dimen>
+    <dimen name="icon_sm">16dp</dimen>
+    <dimen name="icon_md">20dp</dimen>
+    <dimen name="icon_lg">24dp</dimen>
+    <dimen name="icon_xl">32dp</dimen>
+
+    <!-- Dimensions - Button Heights -->
+    <dimen name="button_height_sm">36dp</dimen>
+    <dimen name="button_height_md">48dp</dimen>
+    <dimen name="button_height_lg">56dp</dimen>
+
+    <!-- Dimensions - Progress Bars -->
+    <dimen name="progress_bar_height_sm">4dp</dimen>
+    <dimen name="progress_bar_height_md">8dp</dimen>
+    <dimen name="progress_bar_height_lg">12dp</dimen>
+
+    <!-- Dimensions - Card -->
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_elevation">0dp</dimen>
+
+    <!-- Dimensions - Avatar -->
+    <dimen name="avatar_sm">40dp</dimen>
+    <dimen name="avatar_md">56dp</dimen>
+    <dimen name="avatar_lg">80dp</dimen>
+
+    <!-- Dimensions - Text Sizes -->
+    <dimen name="text_xs">10sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_md">14sp</dimen>
+    <dimen name="text_lg">16sp</dimen>
+    <dimen name="text_xl">20sp</dimen>
+    <dimen name="text_2xl">24sp</dimen>
+    <dimen name="text_3xl">32sp</dimen>
+</resources>

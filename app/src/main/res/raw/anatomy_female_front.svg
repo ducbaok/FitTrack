@@ -1,0 +1,315 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+  <defs>
+    <style>
+      .muscle { fill: #f5efe8; stroke: #5a6a7a; stroke-width: 1.5; stroke-linejoin: round; }
+      .outline { fill: none; stroke: #5a6a7a; stroke-width: 1.5; stroke-linejoin: round; }
+      .body { fill: #dce4ec; stroke: #5a6a7a; stroke-width: 1.5; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="800" fill="#dce4ec"/>
+  
+  <!-- Head with hair hint -->
+  <ellipse id="head" cx="200" cy="52" rx="42" ry="48" class="body"/>
+  <path d="M158,40 Q155,20 200,10 Q245,20 242,40" fill="none" stroke="#5a6a7a" stroke-width="1.5"/>
+  
+  <!-- Neck -->
+  <path id="muscle_neck" class="muscle" d="
+    M178,95 
+    L222,95 
+    L218,125 
+    L182,125 
+    Z"/>
+  
+  <!-- Trapezius (smaller for female) -->
+  <path id="muscle_trap_left" class="muscle" d="
+    M145,125
+    L182,125
+    L182,140
+    Q165,150 145,145
+    Z"/>
+  <path id="muscle_trap_right" class="muscle" d="
+    M255,125
+    L218,125
+    L218,140
+    Q235,150 255,145
+    Z"/>
+  
+  <!-- Deltoids (narrower shoulders) -->
+  <path id="muscle_deltoid_left" class="muscle" d="
+    M105,135
+    Q88,148 92,188
+    L118,192
+    L135,172
+    L145,148
+    Q128,135 105,135
+    Z"/>
+  <path id="muscle_deltoid_right" class="muscle" d="
+    M295,135
+    Q312,148 308,188
+    L282,192
+    L265,172
+    L255,148
+    Q272,135 295,135
+    Z"/>
+  
+  <!-- Pectorals (feminine proportions) -->
+  <path id="muscle_chest_left" class="muscle" d="
+    M145,148
+    L135,172
+    L122,198
+    L140,225
+    L182,230
+    L200,215
+    L200,150
+    L182,140
+    Z"/>
+  <path id="muscle_chest_right" class="muscle" d="
+    M255,148
+    L265,172
+    L278,198
+    L260,225
+    L218,230
+    L200,215
+    L200,150
+    L218,140
+    Z"/>
+  
+  <!-- Biceps (slimmer) -->
+  <path id="muscle_bicep_left" class="muscle" d="
+    M92,192
+    Q82,220 86,265
+    L102,272
+    L118,262
+    Q122,220 118,192
+    Z"/>
+  <path id="muscle_bicep_right" class="muscle" d="
+    M308,192
+    Q318,220 314,265
+    L298,272
+    L282,262
+    Q278,220 282,192
+    Z"/>
+  
+  <!-- Forearms (slimmer) -->
+  <path id="muscle_forearm_left" class="muscle" d="
+    M86,272
+    Q78,315 72,375
+    L82,380
+    L98,372
+    L108,320
+    L102,272
+    Z"/>
+  <path id="muscle_forearm_right" class="muscle" d="
+    M314,272
+    Q322,315 328,375
+    L318,380
+    L302,372
+    L292,320
+    L298,272
+    Z"/>
+  
+  <!-- Rectus Abdominis (narrower) -->
+  <path id="muscle_abs_upper" class="muscle" d="
+    M178,235
+    L222,235
+    L222,268
+    L178,268
+    Z"/>
+  <path id="muscle_abs_mid1" class="muscle" d="
+    M178,273
+    L222,273
+    L222,305
+    L178,305
+    Z"/>
+  <path id="muscle_abs_mid2" class="muscle" d="
+    M178,310
+    L222,310
+    L222,342
+    L178,342
+    Z"/>
+  <path id="muscle_abs_lower" class="muscle" d="
+    M178,347
+    L222,347
+    L222,390
+    Q200,400 178,390
+    Z"/>
+  
+  <!-- Obliques -->
+  <path id="muscle_oblique_left" class="muscle" d="
+    M140,228
+    L178,235
+    L178,390
+    L160,405
+    Q130,330 140,228
+    Z"/>
+  <path id="muscle_oblique_right" class="muscle" d="
+    M260,228
+    L222,235
+    L222,390
+    L240,405
+    Q270,330 260,228
+    Z"/>
+  
+  <!-- Serratus -->
+  <path id="muscle_serratus_left" class="muscle" d="
+    M122,200
+    L140,228
+    L140,265
+    L122,260
+    Q118,230 122,200
+    Z"/>
+  <path id="muscle_serratus_right" class="muscle" d="
+    M278,200
+    L260,228
+    L260,265
+    L278,260
+    Q282,230 278,200
+    Z"/>
+  
+  <!-- Hips (wider for female) -->
+  <path id="muscle_hip_left" class="muscle" d="
+    M160,405
+    L178,390
+    L180,445
+    L135,460
+    Z"/>
+  <path id="muscle_hip_right" class="muscle" d="
+    M240,405
+    L222,390
+    L220,445
+    L265,460
+    Z"/>
+  
+  <!-- Quadriceps (feminine shape) -->
+  <path id="muscle_quad_outer_left" class="muscle" d="
+    M115,465
+    L135,458
+    L145,545
+    L130,575
+    L112,565
+    Q105,510 115,465
+    Z"/>
+  <path id="muscle_quad_inner_left" class="muscle" d="
+    M145,458
+    L180,445
+    L185,555
+    L155,568
+    L145,545
+    Z"/>
+  <path id="muscle_quad_center_left" class="muscle" d="
+    M135,458
+    L145,458
+    L145,545
+    L155,568
+    L145,578
+    L130,575
+    Z"/>
+  
+  <path id="muscle_quad_outer_right" class="muscle" d="
+    M285,465
+    L265,458
+    L255,545
+    L270,575
+    L288,565
+    Q295,510 285,465
+    Z"/>
+  <path id="muscle_quad_inner_right" class="muscle" d="
+    M255,458
+    L220,445
+    L215,555
+    L245,568
+    L255,545
+    Z"/>
+  <path id="muscle_quad_center_right" class="muscle" d="
+    M265,458
+    L255,458
+    L255,545
+    L245,568
+    L255,578
+    L270,575
+    Z"/>
+  
+  <!-- Adductors -->
+  <path id="muscle_adductor_left" class="muscle" d="
+    M180,445
+    L200,440
+    L200,545
+    L185,555
+    Z"/>
+  <path id="muscle_adductor_right" class="muscle" d="
+    M220,445
+    L200,440
+    L200,545
+    L215,555
+    Z"/>
+  
+  <!-- Knees -->
+  <ellipse id="knee_left" cx="150" cy="595" rx="24" ry="18" class="body"/>
+  <ellipse id="knee_right" cx="250" cy="595" rx="24" ry="18" class="body"/>
+  
+  <!-- Tibialis / Shins (slimmer) -->
+  <path id="muscle_tibialis_left" class="muscle" d="
+    M128,612
+    L152,612
+    L158,710
+    L140,720
+    L118,708
+    Q115,655 128,612
+    Z"/>
+  <path id="muscle_tibialis_right" class="muscle" d="
+    M272,612
+    L248,612
+    L242,710
+    L260,720
+    L282,708
+    Q285,655 272,612
+    Z"/>
+  
+  <!-- Calves front view -->
+  <path id="muscle_calf_front_left" class="muscle" d="
+    M152,612
+    L172,618
+    L175,695
+    L158,710
+    Z"/>
+  <path id="muscle_calf_front_right" class="muscle" d="
+    M248,612
+    L228,618
+    L225,695
+    L242,710
+    Z"/>
+  
+  <!-- Feet -->
+  <path id="foot_left" class="body" d="
+    M118,725
+    L162,725
+    Q172,738 168,752
+    L112,752
+    Q102,738 118,725
+    Z"/>
+  <path id="foot_right" class="body" d="
+    M282,725
+    L238,725
+    Q228,738 232,752
+    L288,752
+    Q298,738 282,725
+    Z"/>
+  
+  <!-- Hands -->
+  <path id="hand_left" class="body" d="
+    M68,378
+    L85,375
+    L92,412
+    L75,425
+    L58,415
+    Z"/>
+  <path id="hand_right" class="body" d="
+    M332,378
+    L315,375
+    L308,412
+    L325,425
+    L342,415
+    Z"/>
+</svg>
